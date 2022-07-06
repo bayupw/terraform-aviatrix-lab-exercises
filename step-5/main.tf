@@ -5,7 +5,7 @@ resource "aviatrix_vpc" "azure_transit" {
   region               = var.azure_region
   name                 = "azure-transit"
   cidr                 = "10.2.0.0/23"
-  aviatrix_firenet_vpc = yes
+  aviatrix_firenet_vpc = true
 }
 
 # Create an Aviatrix Azure Transit Network Gateway
